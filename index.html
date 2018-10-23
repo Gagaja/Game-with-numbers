@@ -1,0 +1,76 @@
+
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Igrica</title>
+
+	<style>
+		body {
+			
+
+		}
+
+		#wrapper {
+
+			width: 200px;
+			color: #fff;
+			background: #346635;
+			border: 2px solid #fff;
+			margin: auto;
+			text-align: center;
+			font-family: Arial;
+			top: 50%;
+			padding: 5px;
+			
+
+		}
+		.tacno {
+			background-image: url(like.jpg);
+			background-size: cover;
+			
+		}
+	</style>
+</head>
+
+<body>
+		
+	<div id="wrapper">
+
+			
+			<script>
+				var a, b, rezultat, unos;
+
+
+				a = Math.ceil(Math.random() * 10)
+				console.log("Prvi broj je " + a);
+
+				b = Math.ceil(Math.random() * 10)
+				console.log("Prvi broj je " + b);
+
+				unos = parseInt(prompt("Koliki je rezultat" + a + "+" + b))
+				console.log("korisnik je uneo" + unos);
+
+				rezultat = a + b;
+				console.log("parvi rezultat je " + rezultat);
+				if (unos == rezultat) {
+
+					document.write("Tačno je!");
+
+				}
+				else {
+					document.write("Netačno! Tačan rezultat je" + rezultat + ", ali uneli ste" + unos);
+
+				}
+
+
+			</script>
+
+
+		
+	</div>
+
+</body>
+
+</html>
